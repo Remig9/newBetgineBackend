@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "singularName": "payment",
+    "pluralName": "payments",
+    "displayName": "payment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subscription": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "text"
+    },
+    "idnumber": {
+      "type": "integer"
+    }
+  }
+}
