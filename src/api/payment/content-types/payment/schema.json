@@ -19,6 +19,18 @@
     },
     "idnumber": {
       "type": "integer"
+    },
+    "paymentDate": {
+      "type": "datetime"
+    },
+    "durationDays": {
+      "type": "integer"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "remainingDays": {
+      "type": "integer"
     }
   }
 }

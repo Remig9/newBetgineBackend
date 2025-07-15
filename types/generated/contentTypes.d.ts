@@ -586,9 +586,11 @@ export interface ApiPaymentPayment extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    amount: Schema.Attribute.Integer;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    durationDays: Schema.Attribute.Integer;
     idnumber: Schema.Attribute.Integer;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -597,7 +599,9 @@ export interface ApiPaymentPayment extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.Text;
+    paymentDate: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
+    remainingDays: Schema.Attribute.Integer;
     subscription: Schema.Attribute.Boolean;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

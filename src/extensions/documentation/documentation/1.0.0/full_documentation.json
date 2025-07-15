@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-07-15T15:59:55.103Z"
+    "x-generation-date": "2025-07-15T17:17:29.080Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -9735,6 +9735,19 @@
               "idnumber": {
                 "type": "integer"
               },
+              "paymentDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "durationDays": {
+                "type": "integer"
+              },
+              "amount": {
+                "type": "integer"
+              },
+              "remainingDays": {
+                "type": "integer"
+              },
               "locale": {
                 "type": "string"
               },
@@ -9807,6 +9820,19 @@
             "type": "string"
           },
           "idnumber": {
+            "type": "integer"
+          },
+          "paymentDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "durationDays": {
+            "type": "integer"
+          },
+          "amount": {
+            "type": "integer"
+          },
+          "remainingDays": {
             "type": "integer"
           },
           "createdAt": {
@@ -10116,6 +10142,19 @@
                   "type": "string"
                 },
                 "idnumber": {
+                  "type": "integer"
+                },
+                "paymentDate": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "durationDays": {
+                  "type": "integer"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "remainingDays": {
                   "type": "integer"
                 },
                 "createdAt": {
